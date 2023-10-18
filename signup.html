@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="side-header"><img src="./img/odin-lined.png" alt="the odin project logo" class="logo">Odin</div>
+        </div>
+        <div class="container">
+            <div class="header">
+                <p>This is not a real online service! <br>But you know you need something like this in your life. <br><br> Sign up <em>now</em> to get started!</p>
+            </div>
+            <div class="form-container">
+                <form action="example.com/path" method="post" id="sign-up">
+                    <h2>Let's do this!</h2>
+                    <ul>
+                        <li>
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name"  maxlength="40">
+                        </li>
+                        <li>
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" maxlength="40">
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </li>
+                        <li>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" maxlength="40">
+                        </li>
+                        <li>
+                            <label for="pwd">Password<span aria-label="required">*</span></label>
+                            <input type="password" id="pwd" name="pwd" required maxlength="40">
+                        </li>
+                        <li>
+                            <label for="confirm-pwd">Confirm password<span aria-label="required">*</span></label>
+                            <input type="password" id="confirm-pwd" required maxlength="40">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="footer">
+                <button type="submit" form="sign-up">Create Account</button>
+                <div class="log-in-text">Already have an account? <a href="">Log in</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

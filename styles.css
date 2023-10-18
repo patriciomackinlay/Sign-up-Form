@@ -1,0 +1,199 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+    font-family: nord-bold;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.main {
+    display: flex;
+    flex: auto;
+    font-family: 'Roboto', serif;
+    letter-spacing: -0.02rem;
+    background-color: rgb(246, 246, 247);
+}
+
+.sidebar {
+    background-image:url("./img/sidebar-martin-marek.jpg");
+    background-color: rgb(40, 69, 69);
+    background-size: cover;
+    padding-top: 23.6vh;
+    padding-bottom: 70vh;
+    width: 40vw;
+}
+
+.side-header{
+    display: flex;
+    color: white;
+    font-size: 6rem;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.539);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    gap: 2rem;
+    font-family: nord-bold, sans-serif;
+}
+
+.logo {
+    width: 7rem;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+.header {
+    padding-top: 10vh;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    line-height: 2rem;
+}
+
+em {
+    font-style: italic;
+}
+
+.form-container {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 0px 5px 6px -2px rgba(0, 0, 0, 0.20);
+    background-color: white;
+}
+
+form h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: rgb(57, 57, 57);
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.1rem;
+    color: rgb(87, 87, 87);
+}
+
+input {
+    border-color: rgba(167, 167, 167, 0.468);
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 0.2rem;
+    font-size: 1.1rem;
+    padding: 0.3rem;
+    width: 20rem;
+}
+
+input:focus {
+    background-color: rgba(72, 72, 253, 0.055);
+    outline-color: rgba(72, 72, 253, 0.508);
+    box-shadow: 0px 5px 6px -2px rgba(0, 0, 0, 0.10);
+}
+
+.footer {
+    padding-left: 2rem;
+}
+
+.footer button {
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+    border-style: none;
+    background-color: rgba(0, 0, 246, 0.604);
+    box-shadow: 0px 5px 6px -2px rgba(0, 0, 0, 0.20);
+    cursor: pointer;
+}
+
+.footer button:hover {
+    background-color: rgba(0, 0, 246, 0.454);
+}
+
+.footer button:active {
+    transform:scale(0.9);
+}
+
+#phone, #first-name, #last-name, #email {
+    border-color: rgba(167, 167, 167, 0.468);
+    background-color: white;
+}
+
+input:valid {
+    background-color: rgba(66, 246, 0, 0.162);
+    border-color: rgba(8, 143, 33, 0.654);;
+}
+
+
+input:invalid {
+    background-color: rgba(246, 0, 0, 0.162);
+    border-color: rgba(143, 8, 8, 0.654);
+}
